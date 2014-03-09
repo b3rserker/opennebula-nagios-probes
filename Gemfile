@@ -1,18 +1,12 @@
-##
 source "http://rubygems.org"
-##
 
-gem "nagios-probe"
-gem "log4r"
-gem "amazon-ec2"
-gem "multipart-post"
-gem "rake"
-gem "occi-cli"
-gem "opennebula-oca"
-gem "occi-api", "~> 4.2"
+gemspec
 
-group :test do
-  gem "rspec"
-  gem "vcr"
-  gem "webmock", "~>1.9.3"
+group :development do
+  gem 'rubygems-tasks', :git => 'git://github.com/postmodern/rubygems-tasks.git'
+  gem 'rspec',   '~> 2.14'
+  gem 'webmock', '~> 1.9'
+  gem 'vcr',     '~> 2.8'
+  gem 'rake',    '~> 10.1'
+  gem 'bundler', '~> 1.3'
 end

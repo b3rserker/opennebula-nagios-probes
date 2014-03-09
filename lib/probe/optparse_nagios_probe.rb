@@ -19,7 +19,6 @@ require 'ostruct'
 # OptparseNagiosProbe - opennebula-nagios probes ARGV parser class.
 
 class OptparseNagiosProbe
-  VERSION = 0.99
 
   def self.parse(args)
     options = OpenStruct.new
@@ -151,7 +150,7 @@ class OptparseNagiosProbe
       end
 
       opts.on_tail('--version', 'Show version') do
-        puts VERSION
+        puts OpennebulaNagiosProbe::VERSION
         exit!
       end
 

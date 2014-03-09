@@ -16,9 +16,9 @@
 require 'opennebula_probe'
 require 'occi/client'
 
-# OpenNebulaOcciProbe - OCCI client query service implementation.
+# OpennebulaOcciProbe - OCCI client query service implementation.
 
-class OpenNebulaOcciProbe < OpennebulaProbe
+class OpennebulaOcciProbe < OpennebulaProbe
   def initialize(opts)
     super(opts)
 

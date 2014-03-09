@@ -26,7 +26,7 @@ require 'opennebula'
 
 require 'opennebula_oned_probe'
 
-RSpec::Core::DSL.describe OpenNebulaOnedProbe do
+RSpec::Core::DSL.describe OpennebulaOnedProbe do
   before do
     WebMock.disable_net_connect! allow: 'localhost'
 
@@ -57,7 +57,7 @@ RSpec::Core::DSL.describe OpenNebulaOnedProbe do
 
   context 'with no resources' do
     before :each do
-      @probe = OpenNebulaOnedProbe.new(@options)
+      @probe = OpennebulaOnedProbe.new(@options)
       @probe.logger = @logger
     end
 
@@ -91,7 +91,7 @@ RSpec::Core::DSL.describe OpenNebulaOnedProbe do
       @options.storage = %w(6 7)
       @options.compute = %w(11)
 
-      @probe = OpenNebulaOnedProbe.new(@options)
+      @probe = OpennebulaOnedProbe.new(@options)
       @probe.logger = @logger
     end
 
@@ -125,7 +125,7 @@ RSpec::Core::DSL.describe OpenNebulaOnedProbe do
       @options.storage = %w(126 127)
       @options.compute = %w(22)
 
-      @probe = OpenNebulaOnedProbe.new(@options)
+      @probe = OpennebulaOnedProbe.new(@options)
       @probe.logger = @logger
     end
 

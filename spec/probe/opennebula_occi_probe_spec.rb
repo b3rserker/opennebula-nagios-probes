@@ -25,7 +25,7 @@ require 'ostruct'
 
 require 'opennebula_occi_probe'
 
-RSpec::Core::DSL.describe OpenNebulaOcciProbe do
+RSpec::Core::DSL.describe OpennebulaOcciProbe do
   before do
     WebMock.disable_net_connect! allow: 'localhost'
 
@@ -52,7 +52,7 @@ RSpec::Core::DSL.describe OpenNebulaOcciProbe do
 
   context 'with no resources' do
     before :each do
-      @probe = OpenNebulaOcciProbe.new(@options)
+      @probe = OpennebulaOcciProbe.new(@options)
       @probe.logger = @logger
     end
 
@@ -86,7 +86,7 @@ RSpec::Core::DSL.describe OpenNebulaOcciProbe do
       @options.storage = %w(6 7)
       @options.compute = %w(11)
 
-      @probe = OpenNebulaOcciProbe.new(@options)
+      @probe = OpennebulaOcciProbe.new(@options)
       @probe.logger = @logger
     end
 
@@ -120,7 +120,7 @@ RSpec::Core::DSL.describe OpenNebulaOcciProbe do
       @options.storage = %w(126 127)
       @options.compute = %w(22)
 
-      @probe = OpenNebulaOcciProbe.new(@options)
+      @probe = OpennebulaOcciProbe.new(@options)
       @probe.logger = @logger
     end
 

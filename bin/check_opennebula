@@ -19,6 +19,7 @@
 require 'bundler/setup'
 require 'log4r'
 
+# include proxy
 require File.expand_path('..', __FILE__) +'/../lib/opennebula_nagios_probe'
 
 begin
@@ -28,13 +29,13 @@ begin
   # instantiate a probe
   case options.service
   when :oned
-    probe = OpenNebulaOnedProbe.new(options)
+    probe = OpennebulaOnedProbe.new(options)
     logger = Log4r::Logger.new 'OpenNebulaOnedProbe'
   when :occi, :rocci
-    probe = OpenNebulaOcciProbe.new(options)
+    probe = OpennebulaOcciProbe.new(options)
     logger = Log4r::Logger.new 'OpenNebulaOcciProbe'
   when :econe
-    probe = OpenNebulaEconeProbe.new(options)
+    probe = OpennebulaEconeProbe.new(options)
     logger = Log4r::Logger.new 'OpenNebulaEconeProbe'
   end
 
@@ -43,8 +44,6 @@ begin
   probe.logger = logger
 
   case options.debug_level
-  when 0
-    logger.level = Log4r::FATAL
   when 1
     logger.level = Log4r::ERROR
   when 2

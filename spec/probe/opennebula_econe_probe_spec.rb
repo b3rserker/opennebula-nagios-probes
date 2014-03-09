@@ -27,7 +27,7 @@ require 'ostruct'
 
 require 'opennebula_econe_probe'
 
-RSpec::Core::DSL.describe OpenNebulaEconeProbe do
+RSpec::Core::DSL.describe OpennebulaEconeProbe do
   before do
     WebMock.disable_net_connect! allow: 'localhost'
 
@@ -55,7 +55,7 @@ RSpec::Core::DSL.describe OpenNebulaEconeProbe do
 
   context 'with no resources' do
     before :each do
-      @probe = OpenNebulaEconeProbe.new(@options)
+      @probe = OpennebulaEconeProbe.new(@options)
       @probe.logger = @logger
     end
 
@@ -88,7 +88,7 @@ RSpec::Core::DSL.describe OpenNebulaEconeProbe do
       @options.storage = %w(ami-00000006 ami-00000007)
       @options.compute = %w(11)
 
-      @probe = OpenNebulaEconeProbe.new(@options)
+      @probe = OpennebulaEconeProbe.new(@options)
       @probe.logger = @logger
     end
 
@@ -121,7 +121,7 @@ RSpec::Core::DSL.describe OpenNebulaEconeProbe do
       @options.storage = %w(ami-00000126 ami-00000127)
       @options.compute = %w(22)
 
-      @probe = OpenNebulaEconeProbe.new(@options)
+      @probe = OpennebulaEconeProbe.new(@options)
       @probe.logger = @logger
     end
 

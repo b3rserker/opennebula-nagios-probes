@@ -18,9 +18,9 @@ require 'opennebula'
 
 include OpenNebula
 
-# OpenNebulaOnedProbe - XML-RPC ONED client query service implementation.
+# OpennebulaOnedProbe - XML-RPC ONED client query service implementation.
 
-class OpenNebulaOnedProbe < OpennebulaProbe
+class OpennebulaOnedProbe < OpennebulaProbe
   FAILED_CONNECTIVITY = 'Failed to check connectivity: '
   FAILED_RESOURCE = 'Failed to check resource availability: '
 

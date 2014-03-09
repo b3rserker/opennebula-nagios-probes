@@ -17,9 +17,9 @@ require 'opennebula_probe'
 require 'AWS'
 require 'digest/sha1'
 
-# OpenNebulaEconeProbe - Econe client query service implementation.
+# OpennebulaEconeProbe - Econe client query service implementation.
 
-class OpenNebulaEconeProbe < OpennebulaProbe
+class OpennebulaEconeProbe < OpennebulaProbe
   def initialize(opts)
     super(opts)
 

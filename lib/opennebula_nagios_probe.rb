@@ -27,3 +27,7 @@ require 'optparse_nagios_probe'
 require 'opennebula_oned_probe'
 require 'opennebula_occi_probe'
 require 'opennebula_econe_probe'
+
+module OpennebulaNagiosProbe
+  VERSION = "1.0.1" unless defined?(::OpennebulaNagiosProbe::VERSION)
+end
