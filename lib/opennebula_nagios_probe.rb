@@ -17,7 +17,6 @@
 
 # translate special symbols into readable ones
 require 'English'
-
 # include the probe files and a custom version of OCA
 $LOAD_PATH << File.expand_path('..', __FILE__) + '/probe'
 
@@ -27,7 +26,3 @@ require 'optparse_nagios_probe'
 require 'opennebula_oned_probe'
 require 'opennebula_occi_probe'
 require 'opennebula_econe_probe'
-
-module OpennebulaNagiosProbe
-  VERSION = "1.0.1" unless defined?(::OpennebulaNagiosProbe::VERSION)
-end

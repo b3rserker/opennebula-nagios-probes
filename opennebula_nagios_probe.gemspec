@@ -1,7 +1,7 @@
 # coding: utf-8
-lib = File.expand_path('../lib/', __FILE__)
+lib = File.expand_path('../lib/probe/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
-require 'opennebula_nagios_probe'
+require 'optparse_nagios_probe'
 
 Gem::Specification.new do |gem|
   gem.name          = 'opennebula_nagios_probe'

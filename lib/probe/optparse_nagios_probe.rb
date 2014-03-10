@@ -13,6 +13,10 @@
 ## limitations under the License.
 ###########################################################################
 
+module OpennebulaNagiosProbe
+  VERSION = "1.0.2" unless defined?(::OpennebulaNagiosProbe::VERSION)
+end
+
 require 'optparse'
 require 'ostruct'
 
